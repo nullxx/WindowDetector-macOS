@@ -1,5 +1,5 @@
 //
-//  main.m
+//  windowDetector.h
 //  windowDetector
 //
 //  Created by Jon Lara Trigo on 28/04/2020.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    return 0;
-}
+NS_ASSUME_NONNULL_BEGIN
+
+@interface windowDetector : NSObject
+
+@end
+
+NS_ASSUME_NONNULL_END
