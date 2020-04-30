@@ -1,2 +1,2 @@
 # windowDetector
-Detects when macOS user changes program view in output json
+Detects when macOS user changes app view in output json
