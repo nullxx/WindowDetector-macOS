@@ -6,5 +6,5 @@ Output format example:
 
 ## Usage
  - Run executable from releases page.
- - chmod +x <file_downloaded>
+ - Run `chmod +x <file_downloaded>`
  - Run `open <file_downloaded>`
