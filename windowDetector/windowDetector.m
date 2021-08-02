@@ -35,8 +35,12 @@
 
 - (void) getInfo:(NSNotification *)d
     {
-    NSRunningApplication *app = d.userInfo[NSWorkspaceApplicationKey];
+        NSRunningApplication *app = d.userInfo[NSWorkspaceApplicationKey];
+        getInfoFromApp:app;
+    }
 
+- (void) getInfoFromApp:(NSRunningApplication*) app
+    {
     NSDate * now = [NSDate date];
     NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
     [outputFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -48,9 +52,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool
        {
-        NSRunLoop *runLoop = NSRunLoop.currentRunLoop;
-           windowDetector *w = [[windowDetector alloc] init];
-           while ([runLoop runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5]]);
+           NSRunningApplication *app = [[NSWorkspace sharedWorkspace] frontmostApplication];
+           [[windowDetector alloc] getInfoFromApp:app];
        };
        return 0;
 

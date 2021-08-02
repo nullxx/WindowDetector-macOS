@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69DEB3472458C6FA0072C874 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DEB3462458C6FA0072C874 /* main.m */; };
+		578461B226B865A500834D90 /* windowDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 578461B126B865A500834D90 /* windowDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		578461B026B865A500834D90 /* windowDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windowDetector.h; sourceTree = "<group>"; };
+		578461B126B865A500834D90 /* windowDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = windowDetector.m; sourceTree = "<group>"; };
 		69DEB3432458C6FA0072C874 /* windowDetector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = windowDetector; sourceTree = BUILT_PRODUCTS_DIR; };
-		69DEB3462458C6FA0072C874 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		69DEB3452458C6FA0072C874 /* windowDetector */ = {
 			isa = PBXGroup;
 			children = (
-				69DEB3462458C6FA0072C874 /* main.m */,
+				578461B026B865A500834D90 /* windowDetector.h */,
+				578461B126B865A500834D90 /* windowDetector.m */,
 			);
 			path = windowDetector;
 			sourceTree = "<group>";
@@ -119,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69DEB3472458C6FA0072C874 /* main.m in Sources */,
+				578461B226B865A500834D90 /* windowDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +243,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKCUYH3782;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +254,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MKCUYH3782;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
